@@ -1,0 +1,18 @@
+{
+  "Comment": "Create CNAME for web-gps-demo.painkillergis.com",
+  "Changes": [
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "web-gps-demo.painkillergis.com",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": ""
+          }
+        ]
+      }
+    }
+  ]
+}
