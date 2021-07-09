@@ -1,36 +1,14 @@
 import { useEffect, useState } from 'react'
+import bakePosition from './service/bakePosition'
 
 function GeolocationDemo() {
   const [currentPosition, setCurrentPosition] = useState('')
   const { geolocation } = navigator
 
   useEffect(() => {
-    geolocation.getCurrentPosition((position) => {
-      const {
-        coords: {
-          latitude,
-          longitude,
-          altitude,
-          accuracy,
-          altitudeAccuracy,
-          heading,
-          speed,
-        },
-        timestamp,
-      } = position
-      setCurrentPosition({
-        coords: {
-          latitude,
-          longitude,
-          altitude,
-          accuracy,
-          altitudeAccuracy,
-          heading,
-          speed,
-        },
-        timestamp: timestamp.toString(),
-      })
-    })
+    geolocation.getCurrentPosition((position) =>
+      setCurrentPosition(bakePosition(position)),
+    )
   }, [])
 
   return (
