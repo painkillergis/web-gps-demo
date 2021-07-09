@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "web-gps-demo",
+  "name": "web-gps-demo",
   "icons": [
     {
       "src": "favicon.ico",
