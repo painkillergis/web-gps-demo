@@ -31,7 +31,8 @@
         "Items": ["GET", "HEAD", "OPTIONS"]
       }
     },
-    "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+    "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+    "Compress": true
   },
   "ViewerCertificate": {
     "ACMCertificateArn": "arn:aws:acm:us-east-1:552879364626:certificate/43ad6826-3e0d-40aa-af05-2ac1f770a430",
